@@ -1,0 +1,135 @@
+
+@font-face {
+  font-family: inter-semi-bold;
+  src: url("../assests/Inter-SemiBold.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: inter-reg;
+  src: url("../assests/Inter-Regular.ttf") format("truetype");
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: inter-reg;
+}
+
+header {
+  background-color: black;
+  padding: 1rem 2rem;
+  color: #ffffff !important;
+  max-height: 68px;
+}
+
+.logo-wrapper {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+
+.logo {
+  border: 1px solid #ffffff;
+  height: 35px;
+  width: 35px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 8px;
+}
+
+.logo-wrapper > h1 {
+  font-size: 1.4rem;
+  font-family: inter-reg;
+}
+
+main {
+  padding: 2rem;
+  background-color: rgb(242, 242, 242);
+  height: calc(100vh - 67px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.content-wrapper {
+  background-color: rgb(255, 255, 255);
+  border-radius: 8px;
+  padding: 2rem;
+  border-radius: 8px;
+  -webkit-box-shadow: 9px 11px 21px 0px rgba(224, 224, 224, 0.722);
+  -moz-box-shadow: 9px 11px 21px 0px rgba(224, 224, 224, 0.722);
+  box-shadow: 9px 11px 21px 0px rgba(224, 224, 224, 0.722);
+  /* min-height: 400px; */
+}
+
+.content-wrapper > h1 {
+  font-size: 1.2rem;
+  /* background-color:rgb(255, 245, 232) */
+}
+
+.dropdown-wrapper {
+  display: flex;
+  gap: 0.6rem;
+  align-items: center;
+  margin-top: 1.5rem;
+  border: 1px solid black;
+  padding: 2rem;
+  border-radius: 8px;
+  color: #000000;
+  background-color: #8b5dff12;
+  margin-bottom: 2rem;
+}
+
+.dropdown {
+  min-width: 60px;
+  max-width: 180px;
+  padding: 0.25rem 0.5rem;
+}
+
+.input-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+.input-wrapper > p {
+  font-size: 0.9rem;
+}
+.currency-input {
+  width: 100%;
+  max-width: 228px;
+  padding: 0.5rem 1rem;
+  border-radius: 6px;
+  border: 1px solid black;
+}
+.currency-input::placeholder {
+  color: #393939;
+  font-weight: 100;
+}
+
+.convert-btn {
+  width: 100%;
+  padding: 0.5rem 1rem;
+  margin-top: 3rem;
+  background-color: #000000;
+  border: 1px solid black;
+  border-radius: 6px;
+  font-size: large;
+  text-transform: capitalize;
+  color: #ffffff;
+  cursor: pointer;
+}
+
+.error{
+    font-size: 12px;
+    font-family: inter-semi-bold;
+    color: #f40101;
+    position: absolute;
+    transform: translateY(-25px);
+}

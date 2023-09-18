@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- security policy -->
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self' file:; connect-src 'self' https://v6.exchangerate-api.com">
+    <title>Currency Converter</title>
+    <link rel="stylesheet" href="./styles/styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <!-- Header -->
+      <header>
+        <div class="logo-wrapper">
+          <div class="logo">
+            <b>C</b>
+          </div>
+          <h1>Converter+</h1>
+        </div>
+      </header>
+      <!-- Main Body -->
+      <main>
+        <div class="content-wrapper">
+          <h1>Convert your currency:</h1>
+          <!-- Dropdown -->
+          <div class="dropdown-wrapper">
+            <p>Convert from</p>
+            <select class="dropdown"></select>
+            <p>to</p>
+            <select class="dropdown"></select>
+          </div>
+          <div class="error"></div>
+
+          <!-- Currency Input -->
+          <div class="input-wrapper">
+            <p>Enter the amount:</p>
+            <input type="number" id="provided-val" class="currency-input" placeholder="Enter the amount..." />
+          </div>
+          <!-- Converted Amount -->
+          <div class="input-wrapper">
+            <p>Converted amount:</p>
+            <input type="number" id="converted-val" class="currency-input" placeholder="Enter the amount..." />
+          </div>
+
+          <button class="convert-btn">convert</button>
+        </div>
+      </main>
+      <script src="./scripts/script.js"></script>
+    </div>
+  </body>
+</html>
