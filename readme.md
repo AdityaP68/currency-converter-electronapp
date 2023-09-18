@@ -16,7 +16,7 @@ Before you begin, ensure you have Node.js and npm (Node Package Manager) install
 
    ```shell
    git clone https://github.com/AdityaP68/currency-converter-electronapp.git
-   
+   ```
 
 2. Navigate to the project directory:
 
